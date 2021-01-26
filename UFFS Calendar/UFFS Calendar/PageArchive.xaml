@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UFFS_Calendar.PageArchive"
+             BackgroundColor="#00683d">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid Margin="50,0" RowSpacing="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
+                    <Label Text="Procure o arquivo PDF que contém seus horários, obtido através do Portal do Aluno."
+                           FontSize="22" HorizontalTextAlignment="Center" TextColor="White"/>
+                </Grid>
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Button TextColor="Black" Text="Selecione um arquivo do dispositivo" BackgroundColor="White" Clicked="PickPDF" />
+                </Grid>
+                <Grid Grid.Row="2" HorizontalOptions="Center" VerticalOptions="End">
+                    <Button TextColor="White" Text="Voltar" FontSize="20" BackgroundColor="#00683d" Clicked="BackClick"/>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

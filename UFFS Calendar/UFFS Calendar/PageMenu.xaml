@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UFFS_Calendar.PageMenu"
+             BackgroundColor="#00683d">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid Margin="50,0" RowSpacing="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
+                    <Label Text="Olá @user" FontSize="40" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold"/>
+                </Grid>
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand">
+                    <Button TextColor="Black" Text="Importar" BackgroundColor="White" Clicked="import"/>
+                </Grid>
+                <Grid Grid.Row="2" HorizontalOptions="FillAndExpand">
+                    <Button TextColor="Black" Text="Consultar" BackgroundColor="White" Clicked="consult"/>
+                </Grid>
+                <Grid Grid.Row="3" HorizontalOptions="FillAndExpand">
+                    <Button TextColor="Black" Text="Sair" BackgroundColor="White" Clicked="logout"/>
+                </Grid>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

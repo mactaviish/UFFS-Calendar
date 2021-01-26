@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UFFS_Calendar.MainPage"
+             BackgroundColor="#00683d">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid Margin="50,0" RowSpacing="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" HorizontalOptions="FillAndExpand" Margin="0">
+                    <Label Text="Olá" FontSize="50" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold"/>
+                </Grid>
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand">
+                    <Label Text="Para prosseguirmos, precisamos da sua autenticação com o Google. &#10; Basta clicar no botão abaixo =)"
+                           FontSize="22" HorizontalTextAlignment="Center" TextColor="White"/>
+                </Grid>
+                <Grid Grid.Row="2" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Button TextColor="Black" Text="Fazer login com o Google" BackgroundColor="White" Clicked="authenticate"/>
+                </Grid>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
